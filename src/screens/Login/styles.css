@@ -6,13 +6,13 @@
 
     justify-content: center;
 
-    background-color: #646262;
+    /* background-color: #646262; */
 
-    height: 100%;
+    height: 90vh;
 }
 
 .card {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
 
     display: flex;
     flex-direction: column;
@@ -34,9 +34,12 @@
     box-shadow: 7px 7px 14px -1px rgba(0, 0, 0, 0.23);
 }
 
-.container .title{
+.card .title{
     
-    font-size: 30px;
+    font-size: 1.3rem;
+
+    margin-bottom: 1.9rem;
+
 
 }
 
@@ -56,6 +59,7 @@ form .inputContainer{
 
 form .inputContainer label{
     color: #646262;
+    margin-bottom: .2rem;
 }
 
 form .inputContainer input{
@@ -69,9 +73,52 @@ form .inputContainer input{
     padding-inline: .5rem;
 }
 
+form .options {
+    display: flex;
+    width: 17rem;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: -1rem;
+
+}
+
+form .checkboxContainer{
+    display: flex;
+
+    align-items: center;
+
+}
+
+form .checkboxContainer .checkbox{
+    width: 1rem;
+    height: 1rem;
+    
+    margin-right: .3rem;
+}
+
+form .checkboxContainer .labelCheck{
+    font-size: .8rem;
+    color: #646262;
+
+}
+
+form .forgotPass{
+    font-size: .8rem;
+    text-decoration: none;
+
+    color: #646262;
+    font-weight: bold;
+}
+
+
 form .button{
     width: 17rem;
     height: 2.5rem;
+
+    margin-top: 1rem;
 
     background-color: #0D99FF;
 
@@ -87,4 +134,17 @@ form .button{
     font-size: 1rem;
 
     cursor: pointer;
+}
+
+form .register{
+    font-size: .8rem;
+    text-decoration: none;
+
+    color: #646262;
+}
+form .register a{
+    font-size: .8rem;
+    text-decoration: none;
+
+    font-weight: bold;
 }

@@ -1,0 +1,12 @@
+html {
+    
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    background-color: rgb(209, 206, 203);
+}
+
+* { margin: 0; padding: 0; }

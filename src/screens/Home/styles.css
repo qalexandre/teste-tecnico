@@ -73,6 +73,8 @@
 .modalNotifications .modal-header{
     display: flex;
 
+    gap: .2rem;
+
     align-items: center;
     justify-content: space-between;
 
@@ -91,7 +93,20 @@
     margin-right: 2.4rem;
 
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: .9rem;
+
+    color: rgb(247, 247, 247);
+
+    background-color: rgb(230, 54, 54);
+    width: 1.4rem;
+    height: 1.4rem;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: .7rem;
 }
 
 .notification{
