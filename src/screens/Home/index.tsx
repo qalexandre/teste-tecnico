@@ -13,7 +13,7 @@ type HomeProps = {
     setIsLogged: (value: boolean) => void;
 }
 
-export function Home({setIsLogged}: HomeProps) {
+export function Home({ setIsLogged }: HomeProps) {
 
     const [notificationIsOpen, setNotificationIsOpen] = useState(false);
     const [notifications, setNotifications] = useState<Notification[]>([])
@@ -26,7 +26,6 @@ export function Home({setIsLogged}: HomeProps) {
         fetch('https://jsonplaceholder.typicode.com/posts?userId=1', { method: 'GET' }).then(response => response.json()).then(data => {
             setNotifications(data);
         });
-        // setNotifications(response.)
     }
 
     function closeNotifications() {
@@ -42,7 +41,7 @@ export function Home({setIsLogged}: HomeProps) {
         setNotifications(newNotifications)
     }
 
-    function logout(){
+    function logout() {
         setIsLogged(false)
     }
 
@@ -50,8 +49,8 @@ export function Home({setIsLogged}: HomeProps) {
         <div className="container">
             <div className="header">
                 <div className="logout">
-                    <a  onClick={logout} className="item">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVR4nNWVOwoCMRRFj9+diGAhNoK4AkWw8DMSELFwFc4eXIOVu3AVlla22graKUKmGUjyYhg0F057z+MlIfCDlIC6kLJPcQXoAgmghCyAPlCTCDoexSpHTyIYBwhmerXWzAMECqhGK1gVLbgBR31tvxYsgY2BJ/AC9q53YRLsgIcucXGwrcokuArLM7a+gounYO0rSIEzcDcgmt51yMpCdsifQShCcNI3KN6XrP5GMAoonyBIM0DQRpgGMACmQoZAS/LZxJs3zcCSNr54dPMAAAAASUVORK5CYII=" />
+                    <a onClick={logout} className="item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVR4nNWVOwoCMRRFj9+diGAhNoK4AkWw8DMSELFwFc4eXIOVu3AVlla22graKUKmGUjyYhg0F057z+MlIfCDlIC6kLJPcQXoAgmghCyAPlCTCDoexSpHTyIYBwhmerXWzAMECqhGK1gVLbgBR31tvxYsgY2BJ/AC9q53YRLsgIcucXGwrcokuArLM7a+gounYO0rSIEzcDcgmt51yMpCdsifQShCcNI3KN6XrP5GMAoonyBIM0DQRpgGMACmQoZAS/LZxJs3zcCSNr54dPMAAAAASUVORK5CYII=" />
 
                     </a>
                 </div>
@@ -71,18 +70,12 @@ export function Home({setIsLogged}: HomeProps) {
             <Modal
                 isOpen={notificationIsOpen}
                 className='modalNotifications'
-                // onAfterOpen={afterOpenModal}
                 onRequestClose={closeNotifications}
-
-                
-            // style={customStyles}
-
-            // contentLabel="Example Modal"
             >
                 <a className="closeModal" onClick={closeNotifications}>&#x2716;</a>
                 <div className="modal-header">
-                <h3 className="title">Notificações</h3>
-                <p className='modal-count'>{notifications.length}</p>
+                    <h3 className="title">Notificações</h3>
+                    <p className='modal-count'>{notifications.length}</p>
                 </div>
                 <div className="notifications">
                     {notifications && notifications.map(notification => (
