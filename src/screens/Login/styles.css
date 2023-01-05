@@ -1,0 +1,90 @@
+
+
+.containerLogin{
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #646262;
+
+    height: 100%;
+}
+
+.card {
+    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 20rem;
+    padding: 4rem;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6px;
+
+    background-color: white;
+
+
+
+    -webkit-box-shadow: 7px 7px 14px -1px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 7px 7px 14px -1px rgba(0, 0, 0, 0.23);
+    box-shadow: 7px 7px 14px -1px rgba(0, 0, 0, 0.23);
+}
+
+.container .title{
+    
+    font-size: 30px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5rem;
+}
+
+form .inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+form .inputContainer label{
+    color: #646262;
+}
+
+form .inputContainer input{
+    width: 16rem;
+    height: 2rem;
+
+    border-radius: 6px;
+
+    border: 1px solid rgb(194, 191, 191);
+
+    padding-inline: .5rem;
+}
+
+form .button{
+    width: 17rem;
+    height: 2.5rem;
+
+    background-color: #0D99FF;
+
+    text-decoration: none;
+
+    border: none;
+    border-radius: 6px;
+
+    color: #ffffff;
+
+    font-weight: bold;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+}
